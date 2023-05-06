@@ -5,7 +5,6 @@ export enum TopLevelCategory {
   Products
 }
 
-
 export class TopPageModel {
   firstLevel: TopLevelCategory;
   secondCategory: string;
