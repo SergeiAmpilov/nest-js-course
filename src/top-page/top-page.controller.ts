@@ -8,9 +8,7 @@ export class TopPageController {
   @Post('create')
   async create(
     @Body() dto: Omit<TopPageModel, '_id'>
-  ) {
-
-  }
+  ) {  }
 
   @Get(':id')
   async get(
@@ -20,9 +18,7 @@ export class TopPageController {
   @Delete(':id')
   async delete(
     @Param('id') id: string
-  ) {
-
-  }
+  ) {  }
 
   @Patch(':id')
   async patch(
@@ -34,8 +30,6 @@ export class TopPageController {
   @Post()
   async find(
     @Body() dto: FindTopPageDto
-  ) {
-
-  }
+  ) {  }
 
 }

@@ -8,9 +8,7 @@ export class ProductController {
   @Post('create')
   async create(
     @Body() dto: Omit<ProductModel, '_id'>
-  ) {
-
-  }
+  ) {  }
 
   @Get(':id')
   async get(
@@ -20,9 +18,7 @@ export class ProductController {
   @Delete(':id')
   async delete(
     @Param('id') id: string
-  ) {
-
-  }
+  ) {  }
 
   @Patch(':id')
   async patch(
@@ -34,9 +30,7 @@ export class ProductController {
   @Post()
   async find(
     @Body() dto: FindProductDto
-  ) {
-
-  }
+  ) {  }
 
 
 }
