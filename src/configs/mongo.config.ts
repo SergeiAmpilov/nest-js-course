@@ -9,10 +9,7 @@ export const getMongoConfig = async (configService: ConfigService): Promise<Type
 };
 
 const getMongoString = (configService: ConfigService) => {
-  const res = `mongodb://${configService.get('MONGO_HOST')}:${configService.get('MONGO_PORT')}`;
-
-  console.log(res);
-  return res;
+  return `mongodb://${configService.get('MONGO_HOST')}:${configService.get('MONGO_PORT')}`;
 };
 
 const getMongoOptions = () => {
